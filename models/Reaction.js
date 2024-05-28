@@ -1,5 +1,7 @@
 const { Schema, Types } = require("mongoose");
-
+function dateFormat(timestamp){
+  return timestamp.getMonth()  
+}
 const reactionSchema = new Schema(
   {
     reactionId: {

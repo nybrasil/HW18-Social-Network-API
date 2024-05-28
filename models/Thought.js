@@ -1,9 +1,11 @@
 const { Schema, model } = require('mongoose');
-const Thought = require ('.Thought');
-const dateFormat = require('../utils/dateFormat');
-
+//const dateFormat = require('../utils/seed');
+const reactionSchema = require("./Reaction")
+function dateFormat(timestamp){
+ return timestamp.getMonth() 
+}
 // Schema to create Post model
-const reactionSchema = new Schema(
+const thoughtSchema = new Schema(
     {
       thoughtText: 
        {
@@ -16,7 +18,7 @@ const reactionSchema = new Schema(
         {
          type: Date,
          default: Date.now,
-         get: timestamp => dateFormat(timestamp);
+         get: timestamp => dateFormat(timestamp)
         },
         username: 
         {

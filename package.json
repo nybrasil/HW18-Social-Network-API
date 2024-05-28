@@ -1,0 +1,25 @@
+{
+  "name": "hw18-social-network-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node ./utils/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nybrasil/HW18-Social-Network-API.git"
+  },
+  "author": "Tania Bezerra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nybrasil/HW18-Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/nybrasil/HW18-Social-Network-API#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  }
+}

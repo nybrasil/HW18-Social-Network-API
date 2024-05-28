@@ -1,6 +1,6 @@
 const { Thought, User } = require('../models');
 
-module.exports = {
+const thoughtController = {
   // Function to get all of the thoughts by invoking the find() method with no arguments.
   // Then we return the results as JSON, and catch any errors. Errors are sent as JSON with a message and a 500 status code
     async getThought(req, res) {
@@ -10,7 +10,7 @@ module.exports = {
         } catch (err) {
           res.status(500).json(err);
         }
-      },
+    },
      // Gets a single thought using the findOneAndUpdate method. We pass in the ID of the thought and then respond with it, or an error if not found
       async getSingleThought(req, res) {
         try {

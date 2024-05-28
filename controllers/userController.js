@@ -47,6 +47,16 @@ module.exports = {
             { new: true }
             );
 
+          if (!user) {
+              return res.status(404).json({ message: 'No user found with that ID' });
+            }
+      
+            res.json(user);
+          } catch (err) {
+            res.status(500).json(err);
+          }
+        },
+
             
         // Delete a user and associated thought
       async deleteUser(req, res) {
@@ -100,9 +110,11 @@ module.exports = {
                 res.status(500).json(err);
             }
                                     
-        }
+        },
                                     
-                module.exports = UserController;
+                };
+
+                
 
 
 
@@ -114,4 +126,3 @@ module.exports = {
 
          
 
-}

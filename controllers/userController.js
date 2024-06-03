@@ -14,6 +14,7 @@ module.exports = {
     // Get a single user by ID
     async getUserById(req, res) {
         try {
+   
           const user = await User.findOne({ _id: req.params.userId })
           .select('-__v')
           .populate('friends')
@@ -61,13 +62,14 @@ module.exports = {
         // Delete a user and associated thought
       async deleteUser(req, res) {
          try {
-           const user = await User.findOneAndRemove({ _id: req.params.userId });
+           const user = await User.findOneAndDelete({ _id: req.params.userId });
               if (!user) {
                 return res.status(404).json({ message: 'No user found with that ID' });
                 }
                 res.json({ message: 'User deleted successfully' });
         } 
          catch (err) {
+          console.log (err)
                     res.status(500).json(err);
                     }
                 },

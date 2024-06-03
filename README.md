@@ -25,6 +25,14 @@ To use the API, follow these steps:
 1. Start the server using npm start.
 2. Use Insomnia or a similar tool to test the API endpoints.
 
+# Videos
+
+https://drive.google.com/file/d/1lrFnPi_C4i-KZ8DESHNtM0mYUFCYRDys/view
+
+https://drive.google.com/file/d/1eBBPFsFFSiTNDb7aYcX9Y_algHKnZrdy/view
+
+https://drive.google.com/file/d/1Ynp-vQUE-W3HTQ3FXW1Q3P0Dg-KkfKkN/view
+
 # Credits
 
 Collaborators:
